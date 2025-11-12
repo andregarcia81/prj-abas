@@ -1,0 +1,204 @@
+:root {
+  --cor-primaria: #667eea;
+  --cor-secundaria: #764ba2;
+  --cor-texto: #2d3748;
+  --cor-destaque: #4a5568;
+  --cor-fundo: #f8fafc;
+  --cor-card: #ffffff;
+  --cor-borda: #e2e8f0;
+  --cor-sucesso: #28a745;
+  --transicao-rapida: all 0.3s ease-in-out;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Corpo da página */
+body {
+  background-color: var(--cor-fundo);
+  padding-top: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--cor-texto);
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Container principal */
+.container-cadastro {
+  background-color: var(--cor-card);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  margin-bottom: 50px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.titulo-gradiente {
+  background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icone {
+  font-size: 2rem;
+}
+
+/* Subtítulos de seção */
+.section-heading {
+  color: var(--cor-destaque);
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--cor-borda);
+  position: relative;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+  border-radius: 2px;
+}
+
+.sub-heading {
+  color: var(--cor-texto);
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+/* Labels e campos de formulário */
+.form-label {
+  font-weight: 500;
+  color: var(--cor-destaque);
+  margin-bottom: 4px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 1px solid var(--cor-borda);
+  transition: var(--transicao-rapida);
+  color: var(--cor-texto);
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Bloco de histórico escolar */
+.historico-bloco {
+  background-color: #fcfcfc;
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+  margin-bottom: 25px;
+  transition: var(--transicao-rapida);
+}
+
+.historico-bloco:hover {
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Botão de envio */
+.btn-enviar {
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+  border: none;
+  padding: 12px 35px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: var(--transicao-rapida);
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-enviar:hover {
+  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Checkbox */
+.form-check-input:checked {
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-cadastro {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .btn-enviar {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-cadastro {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .btn-enviar {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto com Abas</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="layout-container">
+      <h1>Sistema de Navegação por Abas</h1>
+    </div>
+  </header>
+
+  <div class="espaco-em-branco"></div>
+
+  <main>
+    <div class="layout-container">
+      <div class="tabs-container">
+        <div class="tabs-wrapper">
+          <ul class="nav nav-tabs custom-tabs" id="mainTab" role="tablist">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#abertura"><i class="bi bi-image"></i><span>Abertura</span></button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#dadosPessoais"><i class="bi bi-person"></i><span>Dados Pessoais</span></button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#dadosEstudantis"><i class="bi bi-journal-text"></i><span>Dados Estudantis</span></button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#dadosPostais"><i class="bi bi-envelope"></i><span>Dados Postais</span></button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabelaDinamica"><i class="bi bi-table"></i><span>Tabela Dinâmica</span></button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#carrousel"><i class="bi bi-sliders"></i><span>Carrossel</span></button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#graficos"><i class="bi bi-bar-chart-line"></i><span>Gráficos</span></button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#landpage"><i class="bi bi-house-door"></i><span>LandPage</span></button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#localizacao"><i class="bi bi-geo-alt"></i><span>Localização</span></button></li>
+          </ul>
+        </div>
+
+        <div class="tab-content fixed-tab-content">
+          <div class="tab-pane fade show active" id="abertura"><img src="imagens/noticias.gif" alt="Notícias" /></div>
+          <div class="tab-pane fade" id="dadosPessoais"><iframe src="./02-cad_cli/cadcli.html" loading="lazy"></iframe></div>
+          <div class="tab-pane fade" id="dadosEstudantis"><iframe src="./03-cad_estu/cadestud.html" loading="lazy"></iframe></div>
+          <div class="tab-pane fade" id="dadosPostais"><iframe src="./06-cad_postal/cad_postal.html" loading="lazy"></iframe></div>
+          <div class="tab-pane fade" id="tabelaDinamica"><iframe src="./05-tab_din-cabo-estrut/tab-din-cab-estrut.html" loading="lazy"></iframe></div>
+          <div class="tab-pane fade" id="carrousel"><iframe src="./07-carousel-3slides/index.html" loading="lazy"></iframe></div>
+          <div class="tab-pane fade" id="graficos"><iframe src="./09-graficos-chart-js/indexradarsemestre4.html" loading="lazy"></iframe></div>
+          <div class="tab-pane fade" id="landpage"><iframe src="./01-cab-estrut/index.html" loading="lazy"></iframe></div>
+          <div class="tab-pane fade" id="localizacao"><iframe src="https://www.google.com/maps?q=FATEC+Franca&output=embed" loading="lazy"></iframe></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="espaco-em-branco"></div>
+
+  <div class="rodape">
+    <div class="layout-container">
+      <div class="rodape-conteudo">
+        <div class="footer-quote">
+          “Tecnologia é melhor quando conecta pessoas.” — <em>Andre, 2025</em>
+        </div>
+
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/seu-perfil" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/seu-usuario" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/seu-perfil" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+
+        <div class="footer-copy">
+          <strong>&copy; 2025 Projeto de Abas Interativas. <br>
+          Desenvolvido por Andre R. L. Garcia 1º Semestre D. S. M. <br>
+          Fatec Franca - Faculdade de Tecnologia de Franca.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="espaco-em-branco"></div>
+
+  <a href="#" id="btnTopo" class="btn btn-primary voltar-topo">
+    <i class="bi bi-arrow-up-circle"></i>
+  </a>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

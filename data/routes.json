@@ -1,0 +1,12 @@
+{
+  "routes": [
+    { "id": "#menu1", "target": "#menu1-content", "path": "./02-cad_cli/cadcli.html" },
+    { "id": "#menu2", "target": "#menu2-content", "path": "./03-cad_estu/cadestud.html" },
+    { "id": "#menu3", "target": "#menu3-content", "path": "./06-cad_postal/cad_postal.html" },
+    { "id": "#menu4", "target": "#menu4-content", "path": "./04-tab_din/tab_din.html" },
+    { "id": "#carousel1", "target": "#carousel1-content", "path": "./08-carousel-1slides/index.html" },
+    { "id": "#carousel3", "target": "#carousel3-content", "path": "./07-carousel-3slides/index.html" },
+    { "id": "#menu6", "target": "#menu6-content", "path": "./09-graficos-chart-js/indexradarsemestre4.html" },
+    { "id": "#menu7", "target": "#menu7-content", "path": "./01-cab-estrut/index.html" }
+  ]
+}

@@ -1,0 +1,122 @@
+body {
+  background: linear-gradient(to bottom right, #f0f4ff, #dbe9ff);
+  margin: 0;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.carrossel-wrapper h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.carrossel-container {
+  background-color: #e6f0ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Horizontal */
+.carrossel-container.horizontal {
+  width: 690px;
+  height: 180px;
+}
+
+.carrossel.horizontal {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  width: 210px;
+  height: 180px;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
+.slide.no-margin {
+  margin-right: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+/* Vertical */
+.carrossel-vertical-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carrossel-container.vertical {
+  width: 210px;
+  height: 600px;
+}
+
+.carrossel.vertical {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide-vertical {
+  width: 210px;
+  height: 180px;
+  flex-shrink: 0;
+  margin-bottom: 30px;
+}
+
+.slide-vertical.no-margin {
+  margin-bottom: 0;
+}
+
+.slide-vertical img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+/* Indicadores */
+.indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.indicadores.vertical {
+  flex-direction: column;
+  align-items: center;
+}
+
+.indicadores span {
+  width: 12px;
+  height: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicadores span.ativo {
+  background-color: #007bff;
+}
+
+/* Indicadores verticais centralizados ao meio do bloco */
+.indicador-vertical-wrapper {
+  position: absolute;
+  left: 230px; /* 210px carrossel + 20px espaço */
+  top: 50%;
+  transform: translateY(-50%);
+}

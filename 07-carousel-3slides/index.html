@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrossel Horizontal e Vertical</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <div class="container d-flex flex-column align-items-center gap-5">
+
+    <!-- Carrossel Horizontal -->
+    <div class="carrossel-wrapper">
+      <h4>Carrossel Horizontal</h4>
+      <div class="carrossel-container horizontal">
+        <div class="carrossel horizontal" id="carrosselHorizontal">
+          <div class="slide"><img src="./img/0001-OIP.webp" /></div>
+          <div class="slide"><img src="./img/0002-OIP.webp" /></div>
+          <div class="slide no-margin"><img src="./img/0003-OIP.webp" /></div>
+          <div class="slide"><img src="./img/0004-OIP.webp"" /></div>
+          <div class="slide"><img src="./img/0005-OIP.webp" /></div>
+          <div class="slide no-margin"><img src="./img/0006-OIP.webp" /></div>
+          <div class="slide"><img src="./img/0007-OIP.webp" /></div>
+          <div class="slide"><img src="./img/0008-OIP.webp" /></div>
+          <div class="slide no-margin"><img src="./img/0009-OIP.webp" /></div>
+        </div>
+      </div>
+      <div class="indicadores" id="indicadoresHorizontal"></div>
+    </div>
+
+    <!-- Carrossel Vertical com indicadores centralizados -->
+    <div class="carrossel-wrapper">
+      <h4>Carrossel Vertical</h4>
+      <div class="carrossel-vertical-wrapper">
+        <div class="carrossel-container vertical">
+          <div class="carrossel vertical" id="carrosselVertical">
+            <div class="slide-vertical"><img src="./img/0001-OIP.webp" /></div>
+            <div class="slide-vertical"><img src="./img/0002-OIP.webp" /></div>
+            <div class="slide-vertical no-margin"><img src="./img/0003-OIP.webp" /></div>
+            <div class="slide-vertical"><img src="./img/0004-OIP.webp" /></div>
+            <div class="slide-vertical"><img src="./img/0005-OIP.webp" /></div>
+            <div class="slide-vertical no-margin"><img src="./img/0006-OIP.webp" /></div>
+            <div class="slide-vertical"><img src="./img/0007-OIP.webp" /></div>
+            <div class="slide-vertical"><img src="./img/0008-OIP.webp" /></div>
+            <div class="slide-vertical no-margin"><img src="./img/0009-OIP.webp" /></div>
+          </div>
+        </div>
+        <div class="indicador-vertical-wrapper">
+          <div class="indicadores vertical" id="indicadoresVertical"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

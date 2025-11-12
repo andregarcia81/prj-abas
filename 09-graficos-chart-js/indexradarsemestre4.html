@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard de Competências</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style-radar-semestre4.css" />
+</head>
+<body>
+  <div class="container py-5">
+    <header class="text-center mb-4">
+      <h1 class="text-primary">Dashboard de Competências</h1>
+      <p class="text-muted">Visualize e exporte os dados por competência</p>
+    </header>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <label for="filtroSemestre" class="form-label">Filtrar por semestre:</label>
+        <select id="filtroSemestre" class="form-select">
+          <option value="todos">Todos os semestres</option>
+          <option value="1">Semestre 1</option>
+          <option value="2">Semestre 2</option>
+          <option value="3">Semestre 3</option>
+          <option value="4">Semestre 4</option>
+          <option value="5">Semestre 5</option>
+          <option value="6">Semestre 6</option>
+        </select>
+      </div>
+      <div class="col-md-6 d-flex align-items-end justify-content-end gap-2">
+        <button id="atualizarGraficos" class="btn btn-primary">Atualizar Gráficos</button>
+        <button id="salvarDados" class="btn btn-outline-success">Salvar Dados</button>
+        <button id="exportarCSV" class="btn btn-outline-secondary">Exportar CSV</button>
+        <button id="exportarPDF" class="btn btn-outline-danger">Exportar PDF</button>
+      </div>
+    </div>
+
+    <section id="estrutura" class="mb-5"></section>
+
+    <div class="row g-4">
+      <div class="col-md-4"><div class="grafico-card"><h5>Área Polar</h5><canvas id="graficoPolar"></canvas></div></div>
+      <div class="col-md-4"><div class="grafico-card"><h5>Barra</h5><canvas id="graficoBarra"></canvas></div></div>
+      <div class="col-md-4"><div class="grafico-card"><h5>Barra Horizontal</h5><canvas id="graficoBarraHorizontal"></canvas></div></div>
+      <div class="col-md-4"><div class="grafico-card"><h5>Bolha</h5><canvas id="graficoBolha"></canvas></div></div>
+      <div class="col-md-4"><div class="grafico-card"><h5>Dispersão</h5><canvas id="graficoDispersao"></canvas></div></div>
+      <div class="col-md-4"><div class="grafico-card"><h5>Linha</h5><canvas id="graficoLinha"></canvas></div></div>
+      <div class="col-md-4"><div class="grafico-card"><h5>Pizza</h5><canvas id="graficoPizza"></canvas></div></div>
+      <div class="col-md-4"><div class="grafico-card"><h5>Radar</h5><canvas id="graficoRadar"></canvas></div></div>
+      <div class="col-md-4"><div class="grafico-card"><h5>Rosquinha</h5><canvas id="graficoRosquinha"></canvas></div></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="js/strut-semestre-radar4.js"></script>
+  <script src="js/graf-radar-semestre4.js"></script>
+</body>
+</html>
